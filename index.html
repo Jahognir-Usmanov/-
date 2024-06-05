@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Динамическая форма</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<form id="dynamicForm">
+    <label for="a">Укажите ваш пол</label><br>
+    <input type="radio" name="gender" value="male" onclick="showFields()"> Мужской<br>
+    <input type="radio" name="gender" value="female" onclick="showFields()"> Женский<br>
+
+    <div id="ageGroup" class="hidden">
+        <label for="a_">Укажите ваш возраст</label><br>
+        <input type="number" name="age"><br>
+    </div>
+
+    <div id="incomeGroup" class="hidden">
+        <label for="a_'">Укажите ваш доход</label><br>
+        <input type="number" name="income"><br>
+    </div>
+
+    <button type="submit">Отправить</button>
+</form>
+
+
+<script src="./script.js"></script>
+
+</body>
+</html>
